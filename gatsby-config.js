@@ -9,9 +9,13 @@ require("dotenv").config({
   path: path.resolve(process.cwd(), ".env.local"),
 })
 
+// const url =
+//   process.env.WPGQL_URL ||
+//   `https://${process.env.PANTHEON_CMS_ENDPOINT}/graphql`
+
 const url =
   process.env.WPGQL_URL ||
-  `https://${process.env.PANTHEON_CMS_ENDPOINT}/graphql`
+  `https://dev-ss-gatsby-portfolio-be.pantheonsite.io/graphql`
 
 module.exports = {
   /* Your site config here */
